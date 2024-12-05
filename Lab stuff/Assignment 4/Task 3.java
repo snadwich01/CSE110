@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class countPositiveNegative {
+public class lab4task3 {
     public static void main(String[] args) {
         Scanner data = new Scanner(System.in);
 
@@ -22,8 +22,8 @@ public class countPositiveNegative {
             } 
             }
         
-        System.out.println(countPosi  + "Non-negative Numbers");
-        System.out.println(countNega  + "Negative Numbers");
+        System.out.println(countPosi  + " Non-negative Numbers");
+        System.out.println(countNega  + " Negative Numbers");
         
         data.close();
     }
