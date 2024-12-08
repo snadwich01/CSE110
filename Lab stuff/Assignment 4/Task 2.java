@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class maxminavg {
+public class inputsquare {
     public static void main(String[] args) {
         Scanner data = new Scanner(System.in);
 
