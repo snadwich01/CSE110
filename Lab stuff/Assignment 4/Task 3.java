@@ -19,7 +19,7 @@ public class numberTypeCount {
             countNega++;
             } else {
             countPosi++;
-            } }
+            }}
         
         System.out.println(countPosi  + " Non-negative Numbers");
         System.out.println(countNega  + " Negative Numbers");
