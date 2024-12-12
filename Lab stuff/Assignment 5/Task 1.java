@@ -15,7 +15,6 @@ public class caseConvert {
       char blk = theWord.charAt(idk);
       if (blk >= 'A' && blk<= 'Z') {
         output += (char)(((int)(blk))+32);
-
       } else{
         output += blk;
       }
