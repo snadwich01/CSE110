@@ -13,13 +13,16 @@ public class caseConvert {
     for (int idk = 0; idk < msg.length(); idk++) {
       char blk = msg.charAt (idk);
       
-      if (ch >= 'A' && ch <= 'Z' || ch >= 'a' && ch <= 'z'){
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U'){        
+      if (blk >= 'A' && blk <= 'Z' || blk >= 'a' && blk <= 'z'){
+        if (blk == 'a' || blk == 'e' || blk == 'i' || blk == 'o' || blk == 'u' || blk == 'A' || blk == 'E' || blk == 'I' || blk == 'O' || blk == 'U'){
+          vowelCount++;
         } else{
            //consonant 
           consCount++;
         }
       }
+
+      System.out.println(consCount);
     }
    
     data.close();
