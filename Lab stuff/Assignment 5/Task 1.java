@@ -1,25 +1,24 @@
 import java.util.Scanner;
 
-public class caseConvert {
+public class caseConversion {
   public static void main (String [] args) {
     
     Scanner data = new Scanner(System.in);
     
-    System.out.println("Please enter the conversion characters");
+    System.out.print("Please enter the conversion characters: ");
     String theWord = data.nextLine();
-    String output = "";
-    
-    //print uppercase
+    String converted = "";
     
     for (int idk = 0; idk < theWord.length(); idk++){
-      char blk = theWord.charAt(idk);
-      if (blk >= 'A' && blk<= 'Z') {
-        output += (char)(((int)(blk))+32);
+      char point = theWord.charAt(idk);
+      if (point >= 'a' && point<= 'z') {
+        converted += (char)(((int)(point)) - 32);
       } else{
-        output += blk;
+        converted += point;
       }
     }
-     System.out.println(output);
-   
+     System.out.println("Converted: " + converted);
+
     data.close();
-  }}
+  }
+}
